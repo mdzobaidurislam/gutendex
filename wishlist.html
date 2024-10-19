@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library - Wishlist</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1><a href="/" class="logo">Gutenberg Books</a></h1>
+      <div class="nav-links">
+        <a href="/" id="homeLink">Home</a>
+        <a href="wishlist.html" id="wishlistLink">Wishlist</a>
+        <span id="count" class="badge">0</span>
+      </div>
+    </nav>
+
+    <header class="filters">
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search books by title..."
+      />
+
+      <div class="custom-dropdown">
+        <button id="dropdownButton" class="dropdown-btn">
+          Select Genre/Topic
+        </button>
+        <ul id="dropdownList" class="dropdown-list hidden"></ul>
+      </div>
+    </header>
+
+    <!-- Wishlist Page -->
+    <section id="wishlistPage" class="page">
+      <h1>Your Wishlist <span id="count1"></span></h1>
+      <div id="wishlistBooks" class="book-list"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Book Library</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
